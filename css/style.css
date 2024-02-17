@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 5% 50% 15%;
+    justify-content: center;
+    background: url("/images/brick.jpg") repeat;
+    background-size: 70%;
+    background-clip: content-box;
+}
+#headline {
+    padding: 0;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+    -webkit-text-stroke: 0.1vh  darkturquoise;
+}
+
+.pink {
+    color: hotpink;
+    -webkit-text-stroke: 0.05em  mediumorchid;
+    text-shadow: #f9a8ff 0 0 30px;
+}
+
+.blue {
+    color: cyan;
+    -webkit-text-stroke: 0.05em  darkturquoise;
+    text-shadow: aqua 0 0 30px;
+}
+
+h2 {
+    font-size: 5vh;
+    margin: 0;
+    padding: 0;
+    color: hotpink;
+    -webkit-text-stroke: 0.01em  mediumorchid;
+    text-shadow: #f9a8ff 0 0 30px;
+}
+
+h1 {
+    font-size: 10vh;
+    margin: 0;
+    color: cyan;
+    -webkit-text-stroke: 0.01em  darkturquoise;
+    text-shadow: aqua 0 0 30px;
+    border: 0.6vh solid #bec0c0;
+    outline: 0.3vh solid #9ea4a4;;
+    border-radius: 6vh;
+    padding: 0.5vh 2vh 0.25vh 2vh;
+    box-shadow: 0 0 2vh 0.05vh white,
+        inset 0 0 2vh 0.05vh white;
+}
+
+#scoreboard {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.table {
+    display: table;
+    border-style: hidden;
+    border-collapse: collapse;
+    width: 45vh;
+    height: 45vh;
+}
+
+.row {
+    display: table-row;
+    height: 30%;
+    width: 100%;
+
+}
+
+.cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 30%;
+    height: 30%;
+    font-size: 10vh;
+    border: 0.6vh ridge #bec0c0;
+}
+footer{
+    grid-column: 1;
+    grid-row: 4;
+    font-size: 3vh;
+}
+
+#table-container {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+button{
+    margin: 3vh;
+    font-size: 3vh;
+    padding: 1vh 2vh;
+    background-color: transparent;
+    border: 0.6vh solid #bec0c0;
+    outline: 0.3vh solid #9ea4a4;;
+    border-radius: 6vh;
+    box-shadow: 0 0 2vh 0.05vh white,
+    inset 0 0 2vh 0.05vh white;
+}
+button:hover
+{
+    color: darkturquoise;
+    -webkit-text-stroke: 0.05em  darkslategray;
+}
+
+input {
+    margin: 3vh 0;
+    padding: 0 1vh;
+    font-size: 2.5vh;
+    background-color: transparent;
+    border: 0.6vh solid #bec0c0;
+    outline: 0.3vh solid #9ea4a4;;
+    border-radius: 6vh;
+    box-shadow: 0 0 2vh 0.05vh white,
+    inset 0 0 2vh 0.05vh white;
+    text-align: center;
+}
+input[type="text"]
+{
+    width: 22vh;
+}
+
+label {
+    padding: 3vh;
+    font-size: 2.5vh;
+}
+
+#scoreboard>.score {
+    padding-left: 0;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#formContainer
+{
+    grid-column: 1;
+    grid-row: 3;
+    display: table;
+    width: 50vh;
+    height: 60vh;
+    text-align: center;
+    alignment: center;
+
+    border: 0.6vh solid #bec0c0;
+    outline: 0.3vh solid #9ea4a4;;
+    border-radius: 6vh;
+    padding: 2vh;
+    box-shadow: 0 0 2vh 0.05vh white,
+    inset 0 0 2vh 0.05vh white;
+}
+
+.blueFlicker
+{
+    animation: blueFlickerAnim;
+    animation-iteration-count: 1;
+    animation-duration: 0.4s;
+}
+
+@keyframes blueFlickerAnim {
+    0% {
+        text-shadow: aqua 0 0 30px;
+        color: cyan;
+        -webkit-text-stroke: 0.05em  darkturquoise;
+    }
+    15% {
+        text-shadow: #196c6c 0 0 30px;
+        color: #0c4646;
+        -webkit-text-stroke: 0.05em #093434;
+    }
+    30% {
+        text-shadow: #135959 0 0 30px;
+        color: #268a8a;
+        -webkit-text-stroke: 0.05em #105d5d;
+
+    }
+    75% {
+        text-shadow: #155757 0 0 30px;
+        color: #134d4d;
+        -webkit-text-stroke: 0.05em #093434;
+
+    }
+    100% {
+        text-shadow: aqua 0 0 30px;
+        color: cyan;
+        -webkit-text-stroke: 0.05em darkturquoise;
+
+    }
+}
+
+.pinkFlicker
+{
+    animation: pinkFlickerAnim;
+    animation-iteration-count: 1;
+    animation-duration: 0.4s;
+}
+
+@keyframes pinkFlickerAnim {
+    0% {
+        color: hotpink;
+        -webkit-text-stroke: 0.05em  mediumorchid;
+        text-shadow: #f9a8ff 0 0 30px;
+    }
+    15% {
+        text-shadow: #5f2864 0 0 30px;
+        color: #4d2036;
+        -webkit-text-stroke: 0.05em #28132d;
+    }
+    30% {
+        text-shadow: #d259dc 0 0 30px;
+        color: #ad487a;
+        -webkit-text-stroke: 0.05em #6a3179;
+
+    }
+    75% {
+        text-shadow: #5f2864 0 0 30px;
+        color: #4d2036;
+        -webkit-text-stroke: 0.05em #28132d;
+    }
+    100% {
+        color: hotpink;
+        -webkit-text-stroke: 0.05em  mediumorchid;
+        text-shadow: #f9a8ff 0 0 30px;
+    }
+}

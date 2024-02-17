@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TicTacYo!</title>
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <script src="./menuViewController.js" type="module" defer></script>
+  <script src="./menuController.js" type="module" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="headline" class="grid-item">
+    <h2>Welcome to</h2>
+    <h1>TicTacYo!</h1>
+  </div>
+  <div id="formContainer" class="grid-item">
+    <label for="player1" class="pink">Player 1: </label>
+    <input type="text" id="player1" maxlength="15" value="Player1">
+    <br>
+    <label for="player2" class="blue">Player 2: </label>
+    <input type="text" id="player2" maxlength="15" value="Player2">
+    <br>
+    <label for="rounds">Number of rounds: </label>
+    <input type="number" step="1" min="1" max="20" id="rounds" value="1">
+    <br>
+    <button type="submit" class="blue" id="startButton">Start Game</button>
+  </div>
+  <footer class="grid-item"></footer>
+</body>
+</html>

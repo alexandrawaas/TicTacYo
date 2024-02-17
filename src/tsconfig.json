@@ -1,0 +1,25 @@
+{
+  "files" : [
+    "game/gameController.ts",
+    "game/gameViewController.ts",
+    "menu/menuController.ts",
+    "menu/menuViewController.ts"
+  ],
+  "include" : [
+    "game/gameController.ts"
+  ],
+
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "ES5"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended"
+}

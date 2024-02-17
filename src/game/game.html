@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TicTacYo!</title>
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <script src="./gameController.js" type="module" defer></script>
+  <script src="./gameViewController.js" type="module" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="headline" class="grid-item">
+    <h2>Welcome to</h2>
+    <h1>TicTacYo!</h1>
+  </div>
+  <div id="scoreboard" class="grid-item">
+    <label id="labelPlayer1" class="pink">Player 1:</label><label id="scorePlayer1" class="score">0</label>
+    <label id="labelPlayer2" class="blue">Player 2:</label><label id="scorePlayer2" class="score">0</label>
+  </div>
+  <div class="grid-item" id="table-container">
+      <div class="table">
+        <div class="row" id="row1">
+          <div class="cell" id="cell1"></div>
+          <div class="cell" id="cell2"></div>
+          <div class="cell" id="cell3"></div>
+        </div>
+        <div class="row" id="row2">
+          <div class="cell" id="cell4"></div>
+          <div class="cell" id="cell5"></div>
+          <div class="cell" id="cell6"></div>
+        </div>
+        <div class="row" id="row3">
+          <div class="cell" id="cell7"></div>
+          <div class="cell" id="cell8"></div>
+          <div class="cell" id="cell9"></div>
+        </div>
+      </div>
+    </div>
+  <footer class="grid-item"></footer>
+</body>
+</html>
