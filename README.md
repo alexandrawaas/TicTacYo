@@ -1,7 +1,7 @@
 ## Description
 
 A simple tic-tac-toe browser game I created for learning purposes. It was developed using only TypeScript, HTML and CSS.
-You can play the game on [this webite](https://alexandrawaas.github.io/TicTacYo/).
+You can play the game on [this webite](https://alexandrawaas.github.io/TicTacYo/) (tested only with Google Chrome, there may be bugs in other browsers).
 <br>
 <br>
 
