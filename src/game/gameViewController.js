@@ -84,7 +84,7 @@ function addEndButtonListeners() {
     document.getElementById("backToMenuButton").addEventListener("click", goToMenu);
 }
 function goToMenu() {
-    open("http://localhost:63342/TicTacYo/src/menu/menu.html", "_self");
+    open("http://localhost:63342/TicTacYo/src/menu/index.html", "_self");
 }
 function reload() {
     open(url, "_self");
