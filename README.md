@@ -3,7 +3,6 @@
 A simple tic-tac-toe browser game I created for learning purposes. It was developed using only TypeScript, HTML and CSS.
 
 <br>
-<br>
 You can play the game on [this webite](https://alexandrawaas.github.io/TicTacYo/) (tested mainly with Google Chrome, there may be bugs in other browsers).
 <br>
 <br>
