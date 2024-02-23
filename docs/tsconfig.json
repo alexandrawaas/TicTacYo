@@ -1,12 +1,12 @@
 {
   "files" : [
-    "game/gameController.ts",
-    "game/gameViewController.ts",
-    "menu/menuController.ts",
-    "menu/menuViewController.ts"
+    "gameController.ts",
+    "gameViewController.ts",
+    "menuController.ts",
+    "menuViewController.ts"
   ],
   "include" : [
-    "game/gameController.ts"
+    "gameController.ts"
   ],
 
   "compilerOptions": {
