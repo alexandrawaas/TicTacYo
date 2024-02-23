@@ -1,4 +1,4 @@
-import * as viewcontroller from "./menuViewController.js";
+import * as viewcontroller from "../menu/menuViewController.js";
 
 let namePlayer1:string;
 let namePlayer2:string;
@@ -14,14 +14,3 @@ viewcontroller.setStartButtonClickListener(()=>{
     url.searchParams.append("rounds", String(rounds));
     open(url, "_self");
 })
-
-    /**
-     Architektur:
-     Aufteilung in MenuPage und GamePage, diese haben jeweils als Klassen:
-     - View (HTML)
-     - Viewcontroller (Variablen getElementById, Methoden für die GUI)
-     - Logikcontroller (Nur Spiellogik, vgl. Bowling)
-
-     Speichern:
-     Cookie (1 Seite) oder Query-Parameter (2 Seiten)
-     */
