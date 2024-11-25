@@ -65,12 +65,12 @@ function fieldListener() {
 function resetFooter() {
     footer.innerHTML = "";
 }
-export function showWinner(scores) {
+export function showWinner(scores, isRightCombo) {
     if (scores[0] > scores[1]) {
-        footer.textContent = playerNames[0] + " has won the game!";
+        footer.textContent = playerNames[0] + " has won the game!" + ((isRightCombo) ? " Ihr seid der Hammer!" : "");
     }
     else if (scores[0] < scores[1]) {
-        footer.textContent = playerNames[1] + " has won the game!";
+        footer.textContent = playerNames[1] + " has won the game!" + ((isRightCombo) ? " Ihr seid der Hammer!" : "");
     }
     else {
         footer.textContent = "Tie! Nobody wins.";

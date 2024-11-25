@@ -6,6 +6,7 @@ let url = new URL(document.URL);
 let rounds: number = (url.searchParams.get("rounds")==null)? 1 : Number(url.searchParams.get("rounds"))!;
 let scores: [number, number] = [0,0];
 let fieldValues:Array<number> = new Array<number>(9);
+let isCorrectCombo:boolean = false;
 
 function test<T extends object>(o:T){}
 test<{age:number}>({age: 2})
@@ -42,7 +43,7 @@ function checkForWin() {
             document.getElementById("nextRoundButton")!.addEventListener("click", nextRoundButtonListener);
         }
         else {
-            setTimeout(function () {viewController.showWinner(scores);}, 3000)
+            setTimeout(function () {viewController.showWinner(scores, isCorrectCombo);}, 3000)
         }
     }
 }
@@ -70,6 +71,7 @@ function checkForRoundWin() {
     }
 
     if (fieldValues[0] != undefined && fieldValues[0] == fieldValues[4] && fieldValues[0] == fieldValues[8]) {
+        if(fieldValues[0] === 0) isCorrectCombo = true;
         return true;
     }
 
